@@ -30,7 +30,7 @@ begin
 if clk'event and clk = '1' then
 clk_1hz <= '1';
 count <= count+1;
-    if count > 50000000 then
+    if count > 25000000 then
     count <=0;
     clk_1hz <= '0';
     end if;
